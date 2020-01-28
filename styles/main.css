@@ -1,9 +1,5 @@
 :root {
-  --main-color-1: firebrick;
-  --main-color-2: #087E8B;
-  --main-color-3: #06A77D;
-  --color-2-dark: #065C66;
-  --color-3-dark: #057A5B;
+  --main-color-1: #31AA5F;
 }
 
 #fotoPortada {
@@ -83,12 +79,12 @@
 
 /* The circles on the timeline */
 .container-timeline.right::after {
-  background-color: var(--main-color-3);
+  background-color: var(--main-color-1);
 }
 
 /* The circles on the timeline */
 .container-timeline.left::after {
-  background-color: var(--main-color-2);
+  background-color: var(--main-color-1);
 }
 
 /* Place the container to the left */
@@ -110,9 +106,9 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid var(--main-color-2);
+  border: medium solid var(--main-color-1);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--main-color-2);
+  border-color: transparent transparent transparent var(--main-color-1);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -124,9 +120,9 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid var(--main-color-3);
+  border: medium solid var(--main-color-1);
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--main-color-3) transparent transparent;
+  border-color: transparent var(--main-color-1) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -137,7 +133,7 @@
 /* The actual content */
 .content-timeline {
   padding: 20px 30px;
-  background-color: var(--main-color-2);
+  background-color: var(--main-color-1);
   position: relative;
   border-radius: 6px;
 }
@@ -168,11 +164,11 @@
   }
 
   .container-timeline.right::before {
-    border-color: transparent var(--main-color-3) transparent transparent;
+    border-color: transparent var(--main-color-1) transparent transparent;
   }
 
   .container-timeline.left::before {
-    border-color: transparent var(--main-color-2) transparent transparent;
+    border-color: transparent var(--main-color-1) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -187,7 +183,7 @@
 }
 
 .navbar {
-  background-color: var(--main-color-2)
+  background-color: none;
 }
 
 .imgRedSocial {
@@ -200,11 +196,11 @@
 }
 
 .carta2 a {
-  color: var(--main-color-2);
+  color: var(--main-color-1);
 }
 
 .carta3 a {
-  color: var(--main-color-3);
+  color: var(--main-color-1);
 }
 
 a:hover {
@@ -216,11 +212,11 @@ a:hover {
 }
 
 .carta2 {
-  border-color: var(--main-color-2);
+  border-color: var(--main-color-1);
 }
 
 .carta3 {
-  border-color: var(--main-color-3);
+  border-color: var(--main-color-1);
 }
 
 .carta1 .card-header {
@@ -228,11 +224,11 @@ a:hover {
 }
 
 .carta2 .card-header {
-  background-color: var(--main-color-2);
+  background-color: var(--main-color-1);
 }
 
 .carta3 .card-header {
-  background-color: var(--main-color-3);
+  background-color: var(--main-color-1);
 }
 
 .card-header {
@@ -260,6 +256,8 @@ a:hover {
   border-radius: 100%;
   background-image: url('../img/perfil.jpeg');
   background-size: cover;
+  max-width: 230px;
+  max-height: 230px;
 }
 
 .redSocial {
@@ -306,10 +304,10 @@ a:hover {
 #sliderJava-pg, #sliderKotlin-pg, #sliderPython-pg {
   background: repeating-linear-gradient(
     45deg,
-    var(--main-color-2),
-    var(--main-color-2) 10px,
-    var(--color-2-dark) 10px,
-    var(--color-2-dark) 20px
+    var(--main-color-1),
+    var(--main-color-1) 10px,
+    var(--main-color-1) 10px,
+    var(--main-color-1) 20px
   );
   
 }
@@ -317,10 +315,10 @@ a:hover {
 #sliderJS-pg, #sliderSQL-pg, #sliderCS-pg {
   background: repeating-linear-gradient(
     45deg,
-    var(--main-color-3),
-    var(--main-color-3) 10px,
-    var(--color-3-dark) 10px,
-    var(--color-3-dark) 20px
+    var(--main-color-1),
+    var(--main-color-1) 10px,
+    var(--main-color-1) 10px,
+    var(--main-color-1) 20px
   );
 }
 
@@ -332,6 +330,3 @@ a:hover {
   background-color: var(--main-color-1);
 }
 
-body {
-  background-color: gainsboro;
-}
