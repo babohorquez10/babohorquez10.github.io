@@ -121,8 +121,8 @@ function agregarEventos() {
 
 function slidersLenguajes( ) {
   moveSlider(document.getElementById("sliderJava-pg"), 90);
-  moveSlider(document.getElementById("sliderJS-pg"), 80);
-  moveSlider(document.getElementById("sliderKotlin-pg"), 75);
+  moveSlider(document.getElementById("sliderJS-pg"), 85);
+  moveSlider(document.getElementById("sliderKotlin-pg"), 70);
   moveSlider(document.getElementById("sliderSQL-pg"), 60);
   moveSlider(document.getElementById("sliderPython-pg"), 60);
   moveSlider(document.getElementById("sliderCS-pg"), 75);

@@ -182,10 +182,6 @@
   }
 }
 
-.navbar {
-  background-color: none;
-}
-
 .imgRedSocial {
   width: 8vh;
   height: 8vh;
@@ -237,6 +233,7 @@ a:hover {
 
 .carta1, .carta2, .carta3 {
   background-color: transparent;
+  margin-bottom: 10px;
 }
 
 .datos p {
@@ -298,7 +295,7 @@ a:hover {
   text-align: center;
   line-height: 20px;
   border-radius: 10px;
-  font-weight: bold;
+  color: #FFF;
 }
 
 #sliderJava-pg, #sliderKotlin-pg, #sliderPython-pg {
@@ -327,6 +324,52 @@ a:hover {
 }
 
 .navbar {
-  background-color: var(--main-color-1);
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.15);
 }
 
+.navbar-nav .nav-item .nav-link {
+  color: var(--main-color-1);
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+  color: var(--main-color-1);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  border-bottom: 3px solid var(--main-color-1);
+  color: var(--main-color-1);
+}
+
+.row#rowHeader {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.profile-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 20px 50px;
+  color: #FFF;
+}
+
+.profile-info .profile-info-text {
+  font-size: 20px;
+}
+
+.profile-info-mobile {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 15px 10px;
+  color: #FFF;
+}
+
+.profile-info-mobile .profile-info-text {
+  font-size: 20px;
+}
