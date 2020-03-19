@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link rel="stylesheet" href="./styles-2/css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+
+  <title>Cotton Company</title>
+</head>
+<body>
+
+  <div class="overlay"></div>
+  
+  <nav class="app-nav">
+    <ul>
+      <li>
+        <div id="navSlide0" class="app-nav-link active" onclick="toSlide(0, this.id);">
+          <div class="icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="icon-text">
+            Bienvenido
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="navSlide1" class="app-nav-link" onclick="toSlide(1, this.id);">
+          <div class="icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="icon-text">
+            Quiénes<br>Somos
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="navSlide2" class="app-nav-link" onclick="toSlide(2, this.id);">
+          <div class="icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="icon-text">
+            Proyectos 
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="navSlide3" class="app-nav-link" onclick="toSlide(3, this.id);">
+          <div class="icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="icon-text">
+            Cómo<br>trabajamos
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="navSlide4" class="app-nav-link" onclick="toSlide(4, this.id);">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="icon-text">
+            Contáctanos
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+
+  </nav>
+
+  <div id="appCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class="app-section">
+
+          <div class="heading">
+            <h1>Cotton Company</h1>
+            <span>Lorem ipsum</span>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <div class="content-container welcome-content">
+                  <h3 class="header">Cotton Company</h3>
+                  <p>
+                    Somos una empresa encargada del diseño, producción y distribución de prendas de vestir para 
+                    hombres, mujeres y niños. Llevamos en el mercado desde el 2009. Somos importadores de grandes 
+                    marcas reconocidas a nivel internacional, lo cual nos dio paso a la distribución de productos 
+                    según la necesidad del mercado.
+                  </p>
+
+                  <p>
+                    Tenemos diseñadores textiles que nos permiten ser únicos en cuanto a la calidad y 
+                    materias primas, que manejamos en nuestros productos y son un diferenciador para nuestros 
+                    clientes, permitiendoles competir en el mercado.
+                  </p>
+
+                  <button class="app-btn" onclick="toSlide(1, 'navSlide1');">Descubrir Más</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="app-section">
+
+          <div class="heading">
+            <h1>¿Quiénes somos?</h1>
+            <span>Descubre más de nosotros</span>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <div class="content-container about-us-content">
+                  <h4 class="header">Misión</h4>
+                  <p>
+                    Somos una compañia comprometida con el desarrollo y produccion de productos textiles en cuanto 
+                    a moda, diseño y calidad.
+                  </p>
+
+                  <h4 class="header header-2">Visión</h4>
+                  <p>
+                    Cotton company es una empresa que en 10 años espera ser una empresa líder en el desarrollo y 
+                    confección de diferentes marcas reconocidas a nivel mundial cumpliendo con los estandares de 
+                    calidad a un precio accequible.
+                  </p>
+
+                  <!-- <button class="app-btn" onclick="toSlide(1, 'navSlide1');">Descubrir Más</button> -->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="app-section">
+
+          <div class="heading">
+            <h1>Proyectos</h1>
+            <span>Nuestros principales proyectos</span>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <div class="content-container projects-content">
+                  <h4 class="header">Nuestros clientes</h4>
+                  <p>
+                    Atendemos la pequeña y mediana empresa y nos acomodamos a las necesidades de nuestros clientes 
+                    siendo los mejores en cuanto a calidad y precio.
+                  </p>
+                  <br>
+
+                  <h4 class="header">Quiénes confían en nosotros</h4>
+                  <p>
+                    Contamos con múltiples clientes a nivel nacional, entre ellos se encuentran: 
+                    people plays, tiendas branchos, vasport, southpole y sportlife.
+                  </p>
+                  <br>
+
+                  <div class="row row-logos">
+                    <div class="col-md-4">
+                      <div class="logo-container" style="background-image: url('./img-2/clients/peopleplays-logo.png');"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="logo-container" style="background-image: url('./img-2/clients/branchos-logo.png');"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="logo-container" style="background-image: url('./img-2/clients/vasport-logo.png');"></div>
+                    </div>
+                  </div>
+
+                  <div class="row row-logos justify-content-center">
+                    <div class="col-md-4">
+                      <div class="logo-container" style="background-size: contain; background-image: url('./img-2/clients/southpole-logo.jpg');"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="logo-container" style="background-image: url('./img-2/clients/sportlife-logo.png');"></div>
+                    </div>
+                    
+                  </div>
+
+                  <!-- <button class="app-btn" onclick="toSlide(1, 'navSlide1');">Descubrir Más</button> -->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="app-section">
+
+          <div class="heading">
+            <h1>¿Cómo trabajamos?</h1>
+            <span>Nuestra metodología de trabajo y nuestras políticas</span>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <div class="content-container product-content">
+                  <div class="row row-production-stage">
+                    <h4 class="header col-12">Producción</h4>
+                    <div class="col-md-3">
+                      <div class="production-stage">
+                        <h5 class="color-header">Fase 1</h5>
+                        <p>
+                          Desarrollar los diseños de las prendas junto al cliente.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="production-stage">
+                        <h5 class="color-header">Fase 2</h5>
+                        <p>
+                          Selección de los insumos textiles que se ajustan a las necesidades del cliente.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="production-stage">
+                        <h5 class="color-header">Fase 3</h5>
+                        <p>
+                          Confección y presentación de la muestra final.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="production-stage">
+                        <h5 class="color-header">Fase 3</h5>
+                        <p>
+                          Ajustes finales de acuerdo al cliente y presentación final.
+                        </p>
+                      </div>
+                    </div>       
+
+                    <h4 class="header header-2 col-12">Nuestras políticas</h4>
+
+                    <div class="col-md-3">
+                      <h4 class="color-header">Muestras</h4>
+                      <p>
+                        En Cotton Company S.A.S la satisfacción del cliente es lo primero. Por lo tanto,
+                        contamos con una política basada en una cantidad ilimitada de prototipos hasta que el cliente
+                        se encuentre 100% satisfecho.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <h4 class="color-header">Consultas</h4>
+                      <p>
+                        En Cotton Company S.A.S siempre estamos dispuestos a resolver las dudas e inquietudes del cliente
+                        con respecto al proceso.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <h4 class="color-header">Entrega</h4>
+                      <p>
+                        En Cotton Company S.A.S entregamos el producto en el lugar que el cliente desee.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <h4 class="color-header">Post-entrega</h4>
+                      <p>
+                        En Cotton Company S.A.S ofrecemos un servicio de garantía de acuerdo a los tiempos establecidos
+                        por el cliente al comprador.
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- <button class="app-btn" onclick="toSlide(1, 'navSlide1');">Descubrir Más</button> -->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="app-section">
+
+          <div class="heading">
+            <h1>Contáctanos</h1>
+            <span>Obtendrás una respuesta en menos de 48 horas</span>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+
+                <div class="content-container contact-content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="info">
+                        <p>
+                          Si tienes alguna duda o quieres recibir más información no dudes en contactarnos.
+                          
+                          <em>
+                            <p>Teléfonos:</p>
+                          </em>
+                          
+                          <em>
+                            <p>Tatiana Milena Osma <br> +57 316 446 2425</p>
+                          </em>
+                          
+                          <em>
+                            <p>Nicolás Ramírez Osma <br> +57 316 626 5517</p>
+                          </em>
+
+                          <em>
+                            <p>Jose Luis Carvajal <br> +57 318 517 6662</p>
+                          </em>
+                          
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-message" id="formMessage" hidden>
+                        <p>Hemos recibido tu mensaje. Nos comunicaremos contigo lo más pronto posible.</p>
+                        <button class="app-btn" onclick="showForm();">Enviar otro mensaje</button>
+                      </div>
+                      <form id="contactForm">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <fieldset>
+                              <input id="contactFormName" name="name" type="text" class="form-control" placeholder="Tu nombre" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-md-6">
+                            <fieldset>
+                              <input id="contactFormPhone" name="phone" type="phone" class="form-control" placeholder="Teléfono de contacto" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-md-6">
+                            <fieldset>
+                              <input id="contactFormEmail" name="email" type="email" class="form-control" placeholder="Correo electrónico de contacto" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-md-12">
+                            <fieldset>
+                              <textarea id="contactFormMessage" name="message" rows="6" class="form-control" placeholder="Mensaje" required=""></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="col-md-12">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="app-btn">Enviar Mensaje</button>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright © 2020 Cotton Company</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Getbutton.io widget -->
+  <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+573166265517", // WhatsApp number
+            call_to_action: "Envíanos un mensaje", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+  <!-- /Getbutton.io widget -->
+
+</body>
+
+<script>
+  $('.carousel').carousel({
+    interval: 0
+  });
+
+</script>
+
+</html>

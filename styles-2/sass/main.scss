@@ -1,0 +1,353 @@
+$base-color: #FFBB05;
+// $base-color: #F00;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 14px;
+  color: #5A5A5A;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  z-index: -1;
+}
+
+.header {
+  text-transform: uppercase;
+  color: #121212;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  &.header-2 {
+    margin-top: 30px;
+  }
+}
+
+.app-btn {
+  
+  display: inline-block;
+  background-color: $base-color;
+  color: #343434;
+  font-size: 13px;
+  padding: 12px 18px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $base-color;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+  }
+
+}
+
+.app-nav {
+
+  text-align: center;
+
+  ul {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline-block;
+      margin: 80px 40px;
+
+      .app-nav-link {
+
+        &:hover {
+          cursor: pointer;
+        }
+        
+        &.active {
+          .icon-text {
+            color: $base-color;
+          }
+          
+        }
+
+        .icon {
+          width: 80px;
+          height: 80px;
+          background-color: $base-color;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+
+          &:hover {
+            background-color: #FFF;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -webkit-transition: all 0.2s linear;
+          }
+
+          i {
+            font-size: 40px;
+          }
+        }
+
+        .icon-text {
+          color: #FFF;
+          text-transform: uppercase;
+          font-size: 14px;
+          text-align: center;
+          font-weight: 400;
+          margin-top: 15px;
+        }
+
+      }
+    }
+  }
+  
+}
+
+.form-message {
+
+  p {
+
+    color: #000;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 15px;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 851px) {
+  .app-nav {
+    ul {
+      li {
+        width: 110px;
+      }
+    }
+  }
+}
+
+@media(max-width: 850px) {
+
+  .overlay {
+    height: 50vh;
+  }
+
+  .app-nav {
+    background-color: $base-color;
+
+    ul {
+
+      box-sizing: border-box;
+
+      li {
+        margin: 15px;
+
+        .app-nav-link {
+          
+          margin-bottom: 10px;
+          margin-top: 10px;
+          border-bottom: 3px solid transparent;
+
+          &.active {
+            border-bottom-color: #FFF;
+            
+            i {
+              transform: translate(0px, -10px);
+              -moz-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+              -webkit-transition: all 0.2s linear;
+            }
+          }
+
+          .icon {
+            width: 25px;
+            height: 25px;
+
+            &:hover {
+              background-color: $base-color;
+              -moz-transition: none;
+              -o-transition: none;
+              -webkit-transition: none;
+            }
+  
+            i {
+              font-size: 25px;
+            }
+          }
+
+          .icon-text {
+            display: none;
+          }
+
+        }
+      }
+    }
+    
+  }
+
+}
+
+
+.app-section {
+
+  .heading {
+    text-align: center;
+    margin-bottom: 180px;
+
+    h1 {
+      margin-top: 30px;
+      font-size: 38px;
+      text-transform: uppercase;
+      color: #FFF;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $base-color;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .content-container {
+    margin-bottom: 100px;
+    margin-top: -80px;
+    background-color: #FFF;
+    border-top: 15px solid $base-color;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+    &.welcome-content {
+      padding: 60px 0;
+      text-align: center;
+
+      p {
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+    }
+
+    &.about-us-content {
+      padding: 30px 0;
+      text-align: center;
+
+      p {
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+    }
+
+    &.projects-content {
+      padding: 30px 0;
+      text-align: center;
+
+      p {
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      .row-logos {
+        padding: 0 15px;
+      }
+
+      .logo-container {
+        height: 180px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+      }
+
+    }
+
+    &.product-content {
+      padding: 30px 0;
+
+      p {
+        text-align: center;
+      }
+
+      .color-header {
+        font-weight: 400;
+        color: $base-color;
+        text-align: center;
+      }
+
+      .row-production-stage {
+        padding: 0 15px;
+      }
+
+    }
+
+    &.contact-content {
+      padding: 30px;
+
+      input, textarea {
+        margin-bottom: 20px;
+        padding-left: 15px;
+        max-width: 100%;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+        font-size: 13px;
+        color: #AAA;
+        background-color: #F4F4F4;
+        border: none;
+        outline: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      textarea {
+        max-height: 180px;
+        height: 140px;
+        outline: none!important;
+      }
+    }
+  }
+
+}
+
+footer {
+  background-color: $base-color;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  margin-top: -1px;
+
+  p {
+    font-size: 13px;
+    color: #343434;
+    margin: 0px;
+    padding: 25px 0px;
+    text-align: center;
+    font-weight: 400;
+  }
+}
